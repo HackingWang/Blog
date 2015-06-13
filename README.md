@@ -1,2 +1,2 @@
-# hacking.github.io
-hacking.wang
+# hacking.wang
+Hacking for fun
