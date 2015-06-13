@@ -1,38 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <title>Idnex-Hacking.Wang|Hacking for fun</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1></h1>
-        <h2>hacking.wang</h2>
-
-        <section id="downloads">
-          <a href="https://Hacking.Wang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a id="hackingwang" class="anchor" href="#hackingwang" aria-hidden="true"><span class="octicon octicon-link"></span></a>hacking.wang</h1>
-
-<p>Hacking for fun</p>
-      </section>
-    </div>
-
-    
-  </body>
-</html>
+---
+　　layout: default
+　　title: Index
+　　---
+　　<h2>{{ page.title }}</h2>
+　　<p>New Posts</p>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
+　　</ul>
